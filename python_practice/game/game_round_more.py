@@ -11,11 +11,11 @@ def fight(my_ph,my_power,enemy_ph,enemy_power):
         else:
             print("我输了！")
             print(f"我方的血量为：{my_ph},敌方的血量为：{enemy_ph}")
-        return 0;
+        return 0
     elif (enemy_ph <= 0):
         print("我赢了！")
         print(f"我方的血量为：{my_ph},敌方的血量为：{enemy_ph}")
-        return 0;
+        return 0
     else:
         return (my_ph,enemy_ph)
 
