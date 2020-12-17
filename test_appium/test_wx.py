@@ -34,8 +34,8 @@ class TestWX:
         self.driver.find_element_by_xpath("//*[@text='搜索']").send_keys(name)
 
         #删除联系人
-        element1 = self.driver.find_elements_by_id("com.tencent.wework:id/e6d")
-        element1[0].click()
+        elements = self.driver.find_elements_by_id("com.tencent.wework:id/e6d")
+        self.driver.find_element_by_xpath(f"//*[@resource-id='com.tencent.wework:id/gqx']//*[@text='{name}']").click()
 
         self.driver.find_element_by_id("com.tencent.wework:id/i6d").click()
         self.driver.find_element_by_xpath("//*[@text='编辑成员']").click()
@@ -49,4 +49,4 @@ class TestWX:
 
         # 判断是否删除成功
         element2 = self.driver.find_elements_by_id("com.tencent.wework:id/e6d")
-        assert len(element2) + 1 == len(element1)
+        assert len(element2) + 1 == len(elements)
