@@ -1,0 +1,24 @@
+## yaml格式参考如下：
+
+#配置启动app的yaml格式
+caps:
+  platformName: Android
+  deviceName: device
+  appPackage: com.tencent.wework
+  appActivity: .launch.LaunchSplashActivity
+  noReset: true
+url: http://localhost:4723/wd/hub
+
+#定位元素并进行点击或者输入文字的yaml格式
+- by: id
+  locator: locator_name
+  click: []
+
+- by: id
+  locator: locator_name
+  send: "{value}"
+
+- by: xpath
+  locator: locator_name
+  click: []
+  gender: "{gender}"

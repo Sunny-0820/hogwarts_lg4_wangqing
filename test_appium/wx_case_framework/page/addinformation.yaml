@@ -1,0 +1,16 @@
+- by: xpath
+  locator: "//*[@resource-id='com.tencent.wework:id/em7']//*[@resource-id='com.tencent.wework:id/b4t']"
+  send: "{name}"
+
+- by: xpath
+  locator: "//*[@resource-id='com.tencent.wework:id/d5l']//*[@resource-id='com.tencent.wework:id/elq']"
+  click: []
+  gender: "{gender}"
+
+- by: id
+  locator: fow
+  send: "{phone_number}"
+
+- by: xpath
+  locator: "//*[@text='保存']"
+  click: []

@@ -1,0 +1,5 @@
+App: ../page/app.yaml
+main: ../page/main.yaml
+adressbook: ../page/adressbook.yaml
+addmembers: ../page/addmembers.yaml
+addinformation: ../page/addinformation.yaml

@@ -1,0 +1,8 @@
+caps:
+  platformName: Android
+  deviceName: device
+  appPackage: com.tencent.wework
+  appActivity: .launch.LaunchSplashActivity
+  noReset: true
+
+url: http://localhost:4723/wd/hub
